@@ -1,0 +1,17 @@
+$colors: (
+    primary: #00cbe6,
+    secondary: #333
+);
+
+@function colors($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: colors(primary);
+}
